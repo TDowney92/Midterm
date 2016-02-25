@@ -50,6 +50,7 @@
             <h2 class="col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10">9 Gorgeous Greek islands</h2>
             <p id="IntroParagraph" class="col-md-4 col-xs-offset-1 col-xs-10">
                 <!-- Inject your IntroParagraph here -->
+                <p id="IntroParagraph"></p>
             </p>
             <img class="col-md-6 col-xs-offset-1  col-xs-10" src="Assets/images/milos-greece-colorful-houses.jpg" alt="Milos Greece colorful houses">
         </article>
@@ -72,7 +73,8 @@
             <h2 class="col-md-10 col-xs-offset-1 col-xs-10">Alonissos</h2>
             <img class="col-md-10 col-xs-offset-1 col-xs-10" src="Assets/images/alonissos.jpg" alt="Alonissos">
             <p class="col-md-10 col-xs-offset-1 col-xs-10" id="Alonissos">
-                <!-- Inject your Alonissos paragraph here --></p>
+                <!-- Inject your Alonissos paragraph here -->
+            </p>
         </article>
         <hr>
 
@@ -116,7 +118,8 @@
             <h2 class="col-md-10 col-xs-offset-1 col-xs-10">Hydra</h2>
             <img class="col-md-10 col-xs-offset-1 col-xs-10" src="Assets/images/hydra.jpg" alt="Hydra">
             <p class="col-md-10 col-xs-offset-1 col-xs-10" id="Hydra">
-                <!-- Inject your Hydra paragraph here --></p>
+                <!-- Inject your Hydra paragraph here -->
+            </p>
         </article>
         <hr>
 
@@ -165,7 +168,35 @@
                             <label for="comments">Comments:</label>
                             <textarea class="form-control" rows="5" id="comments" name="comments" placeholder="Enter Your Comments Here" required></textarea>
                         </div>
+                        <script>
+                            (function() {
+                             
+                                var input = document.createElement('input');
+                                   
+                                var supports = {};
 
+                                supports.autofocus = 'autofocus' in input;
+                                supports.required = 'required' in input;
+                                supports.placeholder = 'placeholder' in input;
+ 
+                                
+                                if (!supports.autofocus) {
+
+                                }                               
+                                if (!supports.required) {
+                                }                                
+                                if (!supports.placeholder) {
+
+                                }    
+                                var send = document.getElementById('contact-submit');
+                                if (send) {
+                                    send.onclick = function () {
+                                        this.innerHTML = '...Sending';
+                                    }
+                                }
+                            })();
+
+                        </script>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
